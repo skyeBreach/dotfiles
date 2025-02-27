@@ -1,0 +1,25 @@
+[user]
+	name = skyeBreach
+	email = skyebenson@hotmail.com
+    useConfigOnly = true
+
+[alias]
+    clone = clone --depth=1
+    rclone = clone --recursive
+
+[init]
+    defaultBranch = main
+
+[safe]
+	directory = /mnt/e/config/.dotfiles
+
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
