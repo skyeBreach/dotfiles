@@ -10,24 +10,20 @@
 source "$HOME/.cargo/env"
 
 #----------------------------------------------------------------------------------------------------------------------#
-# Windows or C drive paths
-
-## Mount point paths
-export DRIVE_C="/mnt/c"
-export DRIVE_WIN=$DRIVE_C
-
-#----------------------------------------------------------------------------------------------------------------------#
 # Development Drive Paths
 
 ## Mount point paths
-export DRIVE_E="/mnt/e"
-export DRIVE_DEV=$DRIVE_E
+export DRIVE_DEV="/mnt/dev"
 
 ## Commonly used directories
-export DIR_CONFIG="${DRIVE_DEV}/config"
-export DIR_DOCS="${DRIVE_DEV}/docs"
-export DIR_LIB="${DRIVE_DEV}/libs"
-export DIR_PROJECT="${DRIVE_DEV}/projects"
-export DIR_TOOL="${DRIVE_DEV}/tools"
+export DEV_APP="${DRIVE_DEV}/apps"
+export DEV_BIN="${DRIVE_DEV}/bin"
+export DEV_BOILERPLATE="${DRIVE_DEV}/boilerplates"
+export DEV_CONFIG="${DRIVE_DEV}/config"
+export DEV_DOCS="${DRIVE_DEV}/docs"
+export DEV_EXAMPLE="${DRIVE_DEV}/example"
+export DEV_LIB="${DRIVE_DEV}/libs"
+export DEV_PROJECT="${DRIVE_DEV}/projects"
+export DEV_TOOL="${DRIVE_DEV}/tools"
 
 #----------------------------------------------------------------------------------------------------------------------#
