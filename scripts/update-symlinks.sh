@@ -106,13 +106,14 @@ if [ $OPTS[backup] -eq 1 ]; then
 
     ## Clean-up .temp directory
     [ -d $DIR_BACKUP_TEMP ] && rm -rf $DIR_BACKUP_TEMP
-fi 
+fi
 
 ## ------------------------------------------------------------------------------------------------------------------ ##
 ## Symbolic Linking
 
 ## Create symbolic links
 for file in $PATH_DOTFILES_HOME; do
+    [ ! -d $(dirname $file) ] && mkdir -p $PATH_DEST_HOME/$(dirname $file)
     ln -sf $ROOT_PATH/home/$file $PATH_DEST_HOME/$file
 done
 
