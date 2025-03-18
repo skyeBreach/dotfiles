@@ -2,6 +2,10 @@
 #   - https://zsh.sourceforge.io/Doc/zsh_a4.pdf
 #   - https://zsh.sourceforge.io/Doc/zsh_a4.pdf#Files
 #   - https://github.com/ohmyzsh/ohmyzsh/wiki/Settings
+#----------------------------------------------------------------------------------------------------------------------#
+# Global Path Variables
+
+export PATH="$PATH:/usr/local/mongodb/bin"
 
 #----------------------------------------------------------------------------------------------------------------------#
 # Third-Party Lib Setup
